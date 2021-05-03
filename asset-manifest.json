@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Edea/static/css/main.e07d0f43.chunk.css",
+    "main.js": "/Edea/static/js/main.1a5de727.chunk.js",
+    "main.js.map": "/Edea/static/js/main.1a5de727.chunk.js.map",
+    "runtime-main.js": "/Edea/static/js/runtime-main.a64d95ab.js",
+    "runtime-main.js.map": "/Edea/static/js/runtime-main.a64d95ab.js.map",
+    "static/js/2.fe185513.chunk.js": "/Edea/static/js/2.fe185513.chunk.js",
+    "static/js/2.fe185513.chunk.js.map": "/Edea/static/js/2.fe185513.chunk.js.map",
+    "static/js/3.3beb76ae.chunk.js": "/Edea/static/js/3.3beb76ae.chunk.js",
+    "static/js/3.3beb76ae.chunk.js.map": "/Edea/static/js/3.3beb76ae.chunk.js.map",
+    "index.html": "/Edea/index.html",
+    "static/css/main.e07d0f43.chunk.css.map": "/Edea/static/css/main.e07d0f43.chunk.css.map",
+    "static/js/2.fe185513.chunk.js.LICENSE.txt": "/Edea/static/js/2.fe185513.chunk.js.LICENSE.txt",
+    "static/media/TrackList.scss": "/Edea/static/media/Interstate-regular.c18b0bcd.ttf",
+    "static/media/no-image.b81242af.png": "/Edea/static/media/no-image.b81242af.png",
+    "static/media/tile.bfb5ee5c.png": "/Edea/static/media/tile.bfb5ee5c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a64d95ab.js",
+    "static/js/2.fe185513.chunk.js",
+    "static/css/main.e07d0f43.chunk.css",
+    "static/js/main.1a5de727.chunk.js"
+  ]
+}
