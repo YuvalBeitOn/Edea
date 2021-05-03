@@ -1,0 +1,36 @@
+@import "../../scss/setup/functions";
+@import "../../scss/setup/typography";
+
+.search-tracks-container {
+  margin: 30px 0 50px 0;
+  height: 100%;
+  width: 66%;
+  .form-container {
+    .search-tracks {
+      input {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 12px 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 350px;
+        margin-bottom: 25px;
+        font-size: 16px;
+      }
+    }
+    .next-results-btn {
+      font-family: "interstate-regular";
+      background-color: #f50;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 10px 15px;
+      letter-spacing: 0.8px;
+      transition: all ease-in-out 0.2s;
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+  }
+}

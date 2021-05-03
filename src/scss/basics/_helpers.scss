@@ -1,0 +1,70 @@
+// List
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &>li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Position
+.flex {
+    display: flex;
+    &.column { flex-direction: column; }
+    &.justify-center { justify-content: center; }
+    &.align-center { align-items: center; }
+    &.wrap { flex-wrap: wrap; }
+    &.space-between { justify-content: space-between; }
+    &.space-evenly { justify-content: space-evenly; }
+    &.space-around { justify-content: space-around; }
+
+    &.auto-center {
+        justify-content: center;
+        align-items: center;
+    }
+    > *.full-grow { flex: 1; }
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+}
+
+// Media helpers
+// .square-ratio { @include aspect-ratio(1, 1); }
+
+// .wide-ratio { @include aspect-ratio(16, 9); }
+
+// .square-3 { @include aspect-ratio(4, 3); }
+
+.pointer {
+    cursor: pointer;
+}
+
+// Transitions
+.fast-trans { transition: 0.25s all; }
+.normal-trans { transition: 0.4s all; }
+.slow-trans { transition: 0.7s all; }
+
+// Normalize Background
+.normBackground {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.back-drop-layer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+  }

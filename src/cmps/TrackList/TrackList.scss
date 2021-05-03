@@ -1,0 +1,32 @@
+@import "../../scss/setup/functions";
+@import "../../scss/setup/typography";
+
+.track-list-container {
+  position: relative;
+  width: calc(100% - 250px);
+  margin-bottom: 40px;
+  .track-list {
+    margin-right: 40px;
+    font-family: "interstate-regular";
+    width: 515px;
+    height: 415px;
+    > *:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    &.tile {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .track-preview-container {
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+      }
+    }
+  }
+  .tile {
+    display: flex;
+  }
+}

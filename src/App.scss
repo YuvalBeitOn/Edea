@@ -1,0 +1,27 @@
+.App {
+  height: 100vh;
+  padding: 30px 50px;
+  position: relative;
+  background-color: rgb(236, 235, 235);
+  .btns-container {
+    align-self: end;
+    .view-btn {
+      background-color: rgb(236, 235, 235);
+      width: 40px;
+      height: 40px;
+      border: none;
+      outline: none;
+      margin: 5px;
+      transition: all ease-in-out 0.2s;
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+      }
+      img {
+        width: 30px;
+        height: 25px;
+        color: white;
+      }
+    }
+  }
+}

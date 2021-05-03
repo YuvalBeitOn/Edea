@@ -1,0 +1,50 @@
+@import "../../scss/setup/functions";
+@import "../../scss/setup/typography";
+
+.track-preview {
+    // width: 500px;
+  &.list {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  &.tile {
+    flex-direction: column;
+    margin: 10px
+  }
+  .track-title {
+    &.list {
+      font-size: 16px;
+      margin-right: 20px;
+    }
+    &.tile {
+      font-size: 16px;
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .track-img {
+    border-radius: 5px;
+
+    &.list {
+      width: 45px;
+      height: 45px;
+      margin-right: 15px;
+    }
+    &.tile {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .track-desc {
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
