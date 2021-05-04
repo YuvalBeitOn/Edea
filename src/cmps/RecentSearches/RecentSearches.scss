@@ -1,14 +1,31 @@
 @import "../../scss/setup/functions";
 @import "../../scss/setup/typography";
+@import "../../scss/setup/mixins";
+@import "../../scss/setup/variables";
 
 .recent-searches-container {
   position: absolute;
   right: 0;
   padding: 0 50px 30px 0;
+  @include for-mobile-layout {
+    position: unset;
+    padding: unset;
+    height: 50px;
+    width: 200px;
+  }
+  .recent-searches-list {
+    @include for-mobile-layout {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
   h2 {
     font-size: 30px;
     margin-bottom: 20px;
     color: #f50;
+    @include for-mobile-layout {
+      font-size: 22px;
+    }
   }
   .serach-term {
     margin-bottom: 10px;
@@ -17,6 +34,10 @@
     height: 35px;
     width: fit-content;
     transition: all ease-in-out 0.2s;
+    @include for-mobile-layout {
+      font-size: 16px;
+      margin-right: 10px;
+    }
     &:hover {
       cursor: pointer;
       transform: scale(1.04);

@@ -1,10 +1,15 @@
 @import "../../scss/setup/functions";
 @import "../../scss/setup/typography";
+@import "../../scss/setup/mixins";
+@import "../../scss/setup/variables";
 
 .search-tracks-container {
   margin: 30px 0 50px 0;
   height: 100%;
   width: 66%;
+  @include for-mobile-layout {
+    flex-direction: column;
+  }
   .form-container {
     .search-tracks {
       input {
@@ -16,6 +21,9 @@
         width: 350px;
         margin-bottom: 25px;
         font-size: 16px;
+        @include for-mobile-layout {
+          width: 300px;
+        }
       }
     }
     .next-results-btn {
@@ -28,6 +36,9 @@
       padding: 10px 15px;
       letter-spacing: 0.8px;
       transition: all ease-in-out 0.2s;
+      @include for-mobile-layout {
+        margin-bottom: 30px;
+      }
       &:hover {
         transform: scale(1.04);
       }

@@ -1,15 +1,30 @@
 @import "../../scss/setup/functions";
 @import "../../scss/setup/typography";
+@import "../../scss/setup/mixins";
+@import "../../scss/setup/variables";
 
 .track-list-container {
   position: relative;
   width: calc(100% - 250px);
   margin-bottom: 40px;
+  @include for-mobile-layout {
+    width: unset;
+    flex-direction: column;
+    align-items: center;
+  }
   .track-list {
     margin-right: 40px;
     font-family: "interstate-regular";
     width: 515px;
     height: 415px;
+    @include for-mobile-layout {
+      width: 300px;
+      height: fit-content;
+      margin-right: unset;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
     > *:not(:last-child) {
       margin-bottom: 5px;
     }

@@ -1,5 +1,7 @@
 @import "../../scss/setup/functions";
 @import "../../scss/setup/typography";
+@import "../../scss/setup/mixins";
+@import "../../scss/setup/variables";
 
 .track-modal {
   width: 550px;
@@ -10,17 +12,30 @@
   margin-bottom: unset !important;
   position: relative;
   border-radius: 5px;
+  @include for-mobile-layout {
+    width: 340px;
+    height: 280px;
+    padding: 15px;
+  }
 
   iframe {
     max-width: 540px !important;
     max-height: 300px !important;
     border-radius: 5px;
+    @include for-mobile-layout {
+      width: 310px !important;
+      height: 260px !important;
+      margin-top: 8px;
+    }
   }
 
   .track-content {
     margin: 20px 0;
     height: fit-content;
     align-items: center;
+    @include for-mobile-layout {
+      display: none;
+    }
     .track-title {
       font-family: "interstate-bold";
       letter-spacing: 0.5px;
@@ -56,11 +71,18 @@
     position: absolute;
     top: 10px;
     right: 5px;
+    @include for-mobile-layout {
+      top: 5px;
+      right: 2px;
+    }
     &:hover {
       color: #f30;
     }
     .fa-times {
       font-size: 17px;
+      @include for-mobile-layout {
+        font-size: 14px;
+      }
     }
   }
 }

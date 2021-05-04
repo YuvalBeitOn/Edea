@@ -1,8 +1,9 @@
 @import "../../scss/setup/functions";
 @import "../../scss/setup/typography";
+@import "../../scss/setup/mixins";
+@import "../../scss/setup/variables";
 
 .track-preview {
-    // width: 500px;
   &.list {
     display: flex;
     align-items: center;
@@ -10,12 +11,24 @@
   }
   &.tile {
     flex-direction: column;
-    margin: 10px
+    margin: 10px;
+    @include for-mobile-layout {
+      margin: 15px;
+    }
   }
   .track-title {
     &.list {
       font-size: 16px;
       margin-right: 20px;
+      @include for-mobile-layout {
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        letter-spacing: 0.4px;
+      }
     }
     &.tile {
       font-size: 16px;
@@ -23,6 +36,10 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      @include for-mobile-layout {
+        font-size: 14px;
+        max-width: 90px;
+      }
     }
   }
 
@@ -33,11 +50,19 @@
       width: 45px;
       height: 45px;
       margin-right: 15px;
+      @include for-mobile-layout {
+        width: 35px;
+        height: 35px;
+      }
     }
     &.tile {
       width: 150px;
       height: 150px;
       margin-bottom: 10px;
+      @include for-mobile-layout {
+        width: 100px;
+        height: 95px;
+      }
     }
   }
 
