@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Edea/static/css/main.e07d0f43.chunk.css",
+    "main.css": "/Edea/static/css/main.3c7abb37.chunk.css",
     "main.js": "/Edea/static/js/main.1d5647ed.chunk.js",
     "main.js.map": "/Edea/static/js/main.1d5647ed.chunk.js.map",
     "runtime-main.js": "/Edea/static/js/runtime-main.a64d95ab.js",
@@ -10,7 +10,7 @@
     "static/js/3.3beb76ae.chunk.js": "/Edea/static/js/3.3beb76ae.chunk.js",
     "static/js/3.3beb76ae.chunk.js.map": "/Edea/static/js/3.3beb76ae.chunk.js.map",
     "index.html": "/Edea/index.html",
-    "static/css/main.e07d0f43.chunk.css.map": "/Edea/static/css/main.e07d0f43.chunk.css.map",
+    "static/css/main.3c7abb37.chunk.css.map": "/Edea/static/css/main.3c7abb37.chunk.css.map",
     "static/js/2.fe185513.chunk.js.LICENSE.txt": "/Edea/static/js/2.fe185513.chunk.js.LICENSE.txt",
     "static/media/TrackList.scss": "/Edea/static/media/Interstate-regular.c18b0bcd.ttf",
     "static/media/no-image.b81242af.png": "/Edea/static/media/no-image.b81242af.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a64d95ab.js",
     "static/js/2.fe185513.chunk.js",
-    "static/css/main.e07d0f43.chunk.css",
+    "static/css/main.3c7abb37.chunk.css",
     "static/js/main.1d5647ed.chunk.js"
   ]
 }
