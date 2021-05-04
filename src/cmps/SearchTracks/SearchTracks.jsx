@@ -94,7 +94,7 @@ export default function SearchTracks({ handleSetTracks }) {
         <section className="search-tracks-container flex">
             <div className="form-container">
                 <form className="search-tracks" ref={formRef}>
-                    <input type="text" onChange={handleInputChange} ref={inputRef} placeholder="Search Tracks..." spellcheck="false" />
+                    <input type="text" onChange={handleInputChange} ref={inputRef} placeholder="Search Tracks..." spellCheck="false" />
                 </form>
                 {isBtnShown && <button className="next-results-btn" onClick={getNextResults}>More Results</button>}
             </div>

@@ -29,16 +29,18 @@ export default function TrackModal({ track, toggleModal }) {
     }
 
     return (
-        <section className="track-modal flex column align-center">
-            <button className="cls-btn" onClick={() => toggleModal(false)}><i className="fas fa-times"></i></button>
-            <div className="track-content flex">
-                <div className="track-details">
-                    <p className="track-title">{track.title}</p>
-                    {track.description && <p className="track-desc">{track.description}</p>}
+        <section className="track-modal-container">
+            <div className="track-modal flex column align-center">
+                <button className="cls-btn" onClick={() => toggleModal(false)}><i className="fas fa-times"></i></button>
+                <div className="track-content flex">
+                    <div className="track-details">
+                        <p className="track-title">{track.title}</p>
+                        {track.description && <p className="track-desc">{track.description}</p>}
+                    </div>
+                    {trackImg}
                 </div>
-                {trackImg}
+                {Parser(iframe)}
             </div>
-            {Parser(iframe)}
         </section>
     )
 }

@@ -2,16 +2,17 @@
 @import "./scss/setup/mixins";
 
 .App {
-  height: 100vh;
+  min-height: 100%;
   padding: 30px 50px;
   position: relative;
   background-color: rgb(236, 235, 235);
   @include for-mobile-layout {
     padding: 20px 35px;
-    min-height: 100vh;
   }
   .btns-container {
     align-self: end;
+    position: absolute;
+    bottom: 20px;
     @include for-mobile-layout {
       align-self: center;
     }
